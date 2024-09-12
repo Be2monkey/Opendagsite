@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: cell;
+}
+
+body{
+    background-image: url(../IMG/backround3.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header, footer{
+    background-color: black;
+    opacity: 70%;
+    padding: 50px;
+    border: 10px black;
+    margin: 15px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin: 75px;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    left: 15px; 
+}
+
+.logo img{
+    width: 20%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-grow: 1; 
+}
+
+a{
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative; 
+    display: inline-block; 
+}
+
+nav a:hover {
+    animation: bounce 0.5s infinite alternate; 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0); 
+    }
+    100% {
+        transform: translateY(-10px); 
+    }
+}
+.koptekst{
+    order: 1;
+}
+.kop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    order: 2;
+}
+.schoolgebouw{
+
+    padding: 20px;
+    margin: 20px;
+}
+.info{
+
+    padding: 20px;
+    margin: 20px;
+}
+.docentnaam{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.docentimg img{
+    align-items: center;
+    width: 10%;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.docentinfo{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.rooster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; 
+}
+.rooster img{
+    width: 50%;
+
+}
+.mening h1{
+    text-align: center;
+    margin: 10px;
+}
+.meningtext{
+    text-align: center;
+    margin: 10px;
+}
+.meningtext img{
+    width: 40%;
+}
